@@ -15,6 +15,11 @@
 		0D1AD73A1AEBF3E600D01CA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AD7391AEBF3E600D01CA5 /* Images.xcassets */; };
 		0D1AD73D1AEBF3E600D01CA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AD73B1AEBF3E600D01CA5 /* LaunchScreen.xib */; };
 		0D1AD7491AEBF3E600D01CA5 /* animationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AD7481AEBF3E600D01CA5 /* animationTests.m */; };
+		0D1AD7541AEBF5F400D01CA5 /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AD7531AEBF5F400D01CA5 /* Animation.m */; };
+		0D1AD7561AEBF64F00D01CA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1AD7551AEBF64F00D01CA5 /* CoreGraphics.framework */; };
+		0D1AD7581AEBF65600D01CA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1AD7571AEBF65600D01CA5 /* UIKit.framework */; };
+		0D1AD75A1AEBF66400D01CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1AD7591AEBF66400D01CA5 /* Foundation.framework */; };
+		0D1AD75C1AEC23C200D01CA5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1AD75B1AEC23C200D01CA5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,12 @@
 		0D1AD7421AEBF3E600D01CA5 /* animationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1AD7471AEBF3E600D01CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D1AD7481AEBF3E600D01CA5 /* animationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = animationTests.m; sourceTree = "<group>"; };
+		0D1AD7521AEBF5F400D01CA5 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		0D1AD7531AEBF5F400D01CA5 /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		0D1AD7551AEBF64F00D01CA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D1AD7571AEBF65600D01CA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D1AD7591AEBF66400D01CA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D1AD75B1AEC23C200D01CA5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1AD75C1AEC23C200D01CA5 /* QuartzCore.framework in Frameworks */,
+				0D1AD75A1AEBF66400D01CA5 /* Foundation.framework in Frameworks */,
+				0D1AD7581AEBF65600D01CA5 /* UIKit.framework in Frameworks */,
+				0D1AD7561AEBF64F00D01CA5 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,11 @@
 		0D1AD71D1AEBF3E600D01CA5 = {
 			isa = PBXGroup;
 			children = (
+				0DC5F7951AED423600951698 /* Animation */,
+				0D1AD75B1AEC23C200D01CA5 /* QuartzCore.framework */,
+				0D1AD7591AEBF66400D01CA5 /* Foundation.framework */,
+				0D1AD7571AEBF65600D01CA5 /* UIKit.framework */,
+				0D1AD7551AEBF64F00D01CA5 /* CoreGraphics.framework */,
 				0D1AD7281AEBF3E600D01CA5 /* animation */,
 				0D1AD7451AEBF3E600D01CA5 /* animationTests */,
 				0D1AD7271AEBF3E600D01CA5 /* Products */,
@@ -120,6 +140,15 @@
 				0D1AD7471AEBF3E600D01CA5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DC5F7951AED423600951698 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0D1AD7521AEBF5F400D01CA5 /* Animation.h */,
+				0D1AD7531AEBF5F400D01CA5 /* Animation.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1AD7541AEBF5F400D01CA5 /* Animation.m in Sources */,
 				0D1AD72F1AEBF3E600D01CA5 /* AppDelegate.m in Sources */,
 				0D1AD7321AEBF3E600D01CA5 /* animation.xcdatamodeld in Sources */,
 				0D1AD7351AEBF3E600D01CA5 /* ViewController.m in Sources */,
@@ -422,6 +452,7 @@
 				0D1AD74E1AEBF3E600D01CA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D1AD74F1AEBF3E600D01CA5 /* Build configuration list for PBXNativeTarget "animationTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +461,7 @@
 				0D1AD7511AEBF3E600D01CA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

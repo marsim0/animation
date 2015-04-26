@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Animation.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    BOOL wasTopButtonPressed;
+    BOOL wasBottomButtonPressed;
+}
 
 
 @end
